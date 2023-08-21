@@ -24,7 +24,7 @@ pipeline{
                    
                     mvnTest()
                 }
-             }
+            }
         }
 
         stage('Integration Test maven'){
@@ -35,7 +35,7 @@ pipeline{
                    
                     mvnIntegrationTest()
                 }
-             }
+            }
         }
          
         stage('static code analysis: sonarqube'){
@@ -70,7 +70,7 @@ pipeline{
                    
                     mvnBuild()
                 }
-             }
+            }
         }
     }
          
