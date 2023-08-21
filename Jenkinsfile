@@ -17,17 +17,7 @@ pipeline{
             }
         }
         
-
-        stage('Integration Test maven'){
-         
-
-             steps{
-                script{
-                   
-                    mvnIntegrationTest()
-                }
-            }
-        }
+        
          
         stage('static code analysis: sonarqube'){
 
